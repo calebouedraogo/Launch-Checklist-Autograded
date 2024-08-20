@@ -29,7 +29,6 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
  }
 
  function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-    let faultyItems = document.getElementById("faultyItems");
     let pilotStatus = document.getElementById("pilotStatus");
     let copilotStatus = document.getElementById("copilotStatus");
     let fuelStatus = document.getElementById("fuelStatus");
@@ -69,7 +68,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
         } else {
             launchStatus.innerHTML = "Shuttle Not Ready for Launch";
             launchStatus.style.color = "red";
-            faultyItems.style.visibility = "visible";
+            list.style.visibility = "visible";
         }
     
  }
